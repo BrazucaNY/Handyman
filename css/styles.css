@@ -1,13 +1,13 @@
-@import url("./section-templates.css");
-@import url("./animate.css");
-@import url("./segments.css");
-@import url("./componentsUI.css");
-@import url("./scripts-styles.css");
-@import url("./segments-components-base.css");
-@import url("./template-basic-styles.css");
-@import url("./font-awesome.min.css");
-@import url("./fonts.css");
-@import url("./tailwind.css");
+@import url("https://david.instago.page/section-templates.css");
+@import url("https://david.instago.page/animate.css");
+@import url("https://david.instago.page/segments.css");
+@import url("https://david.instago.page/componentsUI.css");
+@import url("https://david.instago.page/scripts-styles.css");
+@import url("https://david.instago.page/segments-components-base.css");
+@import url("https://david.instago.page/template-basic-styles.css");
+@import url("https://david.instago.page/font-awesome.min.css");
+@import url("https://david.instago.page/fonts.css");
+@import url("https://david.instago.page/tailwind.css");
 section {
   min-height: 60px;
 }
