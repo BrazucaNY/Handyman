@@ -1,35 +1,69 @@
-<html lang="en" style="--template-color-0: #cd1d26; --template-color-1: #1dcdc4;">
- <head>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>
-   Rodrigues Handyman: Licensed Home Improvement Services in Illinois &amp; Chicago
-  </title>
-  <link href="css/style.css" rel="stylesheet"/>
-  <link href="css/styles.css" rel="stylesheet"/>
-  <script src="js/sendData.js" type="module">
-  </script>
-  <meta content="c353f2cc-db50-4c96-9c44-64309de17b57" name="projectId"/>
-  <meta content="c353f2cc-db50-4c96-9c44-64309de17b57" name="pageId"/>
-  <meta content="/static/202507/c353f2cc-db50-4c96-9c44-64309de17b57/images/ph-img-13.webp" property="og:image"/>
-  <meta content="en" name="langCode"/>
- </head>
- <body class="bg-gray-100">
-  <header class="fixed bg-white top-0 w-full flex justify-center items-center py-2 z-50" data-segmentid="seg-header-01">
-   <nav class="w-full flex flex-col md:flex-row justify-between py-2 section-width">
-    <div class="flex items-center justify-center" draggable="true">
-     <img alt="logo" class="h-[90px] w-[150px] max-w-none" data-hidden-logo="true" draggable="true" src="img/logo-placeholder.png" style="display: none;"/>
-    </div>
-    <div class="flex items-center justify-center md:justify-start gap-2 w-full md:w-0" draggable="true">
-     <button class="block md:hidden" draggable="true" id="burger-button" type="button">
-      <i draggable="true" style="width: 32px; height: 32px; display: block" tag="burger">
-       <svg draggable="true" height="32" viewbox="0 0 16 16" width="32" xmlns="http://www.w3.org/2000/svg">
-        <path clip-rule="evenodd" d="M0 3.75A.75.75 0 0 1 .75 3h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 3.75M0 8a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 8m.75 3.5a.75.75 0 0 0 0 1.5h14.5a.75.75 0 0 0 0-1.5z" draggable="true" fill="currentColor" fill-rule="evenodd">
-        </path>
-       </svg>
-      </i>
-     </button>
-    </div>
-    <menu class="hidden flex md:flex flex-col md:flex-row items-center p-2 justify-between transition-all duration-300 overflow-hidden w-full md:max-h-full menu-collapsed md:overflow-visible ml-0 md:ml-16" draggable="true" id="nav-menu">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Rodrigues Handyman: Licensed Home Improvement Services in Illinois & Chicago</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="module" src="js/sendData.js"></script>
+    <meta property="og:image" content="img/ph-img-13.webp" />
+    <meta name="langCode" content="en" />
+  </head>
+
+  <body class="bg-gray-100 text-white">
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 bg-white shadow">
+      <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+        <img src="img/logo-placeholder.png" alt="Logo" class="h-12 hidden" />
+        <nav class="flex space-x-6">
+          <a href="#home" class="text-black text-sm font-semibold uppercase hover:text-red-600">Home</a>
+          <a href="#services-dashboard" class="text-black text-sm font-semibold uppercase hover:text-red-600">Our Services</a>
+          <a href="#animated-gallery" class="text-black text-sm font-semibold uppercase hover:text-red-600">Project Gallery</a>
+          <a href="#testimonials-2" class="text-black text-sm font-semibold uppercase hover:text-red-600">Client Reviews</a>
+          <a href="#pricing-1" class="text-black text-sm font-semibold uppercase hover:text-red-600">Service Rates</a>
+          <a href="#contact-1" class="text-black text-sm font-semibold uppercase hover:text-red-600">Contact Us</a>
+        </nav>
+        <a href="#footer" class="bg-red-600 text-white text-xs px-4 py-2 rounded-full font-semibold">Footer</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen w-full flex items-center justify-center text-center pt-16">
+      <!-- Background Image -->
+      <img src="img/ph-img-13.webp" alt="Handyman background" class="absolute inset-0 w-full h-full object-cover z-0" />
+      <div class="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+
+      <!-- Content -->
+      <div class="relative z-20 px-4 max-w-3xl">
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-6">Welcome to Rodrigues Handyman</h1>
+        <p class="text-lg md:text-xl font-medium leading-relaxed mb-6">
+          <span class="font-semibold">Rodrigues Handyman</span> offers top-notch home improvement and maintenance services across Illinois and <span class="font-bold">Chicago</span>. With over a decade of experience, we guarantee <span class="font-bold">professionalism</span> and <span class="font-bold">quality</span> in every project.
+        </p>
+        <a href="#contact-1" class="inline-block bg-red-600 hover:bg-red-700 text-white font-semibold py-3 px-6 rounded-full mb-6 transition duration-300">
+          Get Started
+        </a>
+
+        <!-- Social Icons -->
+        <div class="flex justify-center space-x-4 mt-4">
+          <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-40 p-3 rounded-full">
+            <img src="img/icon-facebook.svg" alt="Facebook" class="h-5 w-5" />
+          </a>
+          <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-40 p-3 rounded-full">
+            <img src="img/icon-instagram.svg" alt="Instagram" class="h-5 w-5" />
+          </a>
+          <a href="#" class="bg-white bg-opacity-20 hover:bg-opacity-40 p-3 rounded-full">
+            <img src="img/icon-linkedin.svg" alt="LinkedIn" class="h-5 w-5" />
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+    
+	
+	<menu class="hidden flex md:flex flex-col md:flex-row items-center p-2 justify-between transition-all duration-300 overflow-hidden w-full md:max-h-full menu-collapsed md:overflow-visible ml-0 md:ml-16" draggable="true" id="nav-menu">
      <ul class="flex flex-col md:flex-row gap-6 justify-center text-base items-center w-fit py-1 px-4" draggable="true">
       <li class="py-2 md:py-0 color-secondary-on-hover px-4 cursor-pointer hover-color-secondary" draggable="true">
        <a class="nav-link uppercase" data-cgh="Navigation link label" data-preview="5c3434b2-774b-4346-a37b-5d314016493a" draggable="true" href="/#home">
