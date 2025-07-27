@@ -1,0 +1,78 @@
+:root {
+  --template-color-0: #cd1d26;
+  --template-color-1: #1dcdc4;
+  --font-heading: "Poppins", sans-serif;
+  --font-paragraph: "Poppins", sans-serif;
+  --font-navigation: "Poppins", sans-serif;
+  --section-width: 1300px;
+  --section-col-start: 8;
+  --section-col-end: 44;
+  --section-padding-y: 90px;
+  --section-radius: 0px;
+  --button-radius: 9999px;
+  --radius-sm: 5px;
+  --radius-md: 10px;
+  --radius-lg: 20px;
+  --radius-xl: 30px;
+  --radius-2xl: 40px;
+  --radius-full: 9999px;
+  --radius-input: 10px;
+
+  --heading-1-font-size: 64px;
+  --heading-1-font-weight: 800;
+
+  --heading-2-font-size: 30px;
+  --heading-2-font-weight: 700;
+
+  --heading-3-font-size: 26px;
+  --heading-3-font-weight: 700;
+
+  --heading-4-font-size: 18px;
+  --heading-4-font-weight: 600;
+
+  --heading-5-font-size: 14px;
+  --heading-5-font-weight: 600;
+
+  --heading-6-font-size: 12px;
+  --heading-6-font-weight: 600;
+
+  --paragraph-font-size: 14px;
+  --paragraph-font-weight: 500;
+
+  --heading-align: center;
+
+  --paragraph-align: center;
+
+  --primary-button-bg: var(--template-color-0);
+  --primary-button-bg-hover: color-mix(in srgb, var(--primary-button-bg), white 20%);
+  --primary-button-radius: 9999px;
+  --primary-button-font-size: 16px;
+  --primary-button-font-weight: 500;
+  --primary-button-font-family: "Poppins", sans-serif;
+  --primary-button-padding: 8px 20px;
+  --primary-button-border: none;
+  --primary-button-cursor: pointer;
+  --primary-button-transition: all 0.3s ease;
+  --primary-button-shadow: none;
+  --primary-button-color: white;
+  --primary-button-color-hover: white;
+
+  --secondary-button-bg: color-mix(in srgb, white, transparent 30%);
+  --secondary-button-bg-hover: var(--template-color-1);
+  --secondary-button-radius: 9999px;
+  --secondary-button-font-size: 16px;
+  --secondary-button-font-weight: 500;
+  --secondary-button-font-family: "Poppins", sans-serif;
+  --secondary-button-padding: 8px 20px;
+  --secondary-button-border: 2px solid var(--template-color-1);
+  --secondary-button-cursor: pointer;
+  --secondary-button-transition: all 0.3s ease;
+  --secondary-button-shadow: none;
+  --secondary-button-color: var(--template-color-1);
+  --secondary-button-color-hover: white;
+}
+body {
+  font-family: var(--font-paragraph);
+  color: #161616;
+  background-color: white;
+}

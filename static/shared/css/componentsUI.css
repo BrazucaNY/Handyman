@@ -1,0 +1,120 @@
+.bg-primary {
+  background-color: var(--template-color-0);
+}
+.circular-progress {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: conic-gradient(var(--template-color-0), calc(var(--progress) * 1%), #d1d5db 0%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circular-progress::after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+}
+.circular-progress span {
+  position: relative;
+  font-size: 1.25rem;
+  color: #4b5563;
+}
+.componentsUI.header-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.componentsUI.cta-button,
+.secondary-button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: all 0.3s;
+  height: fit-content;
+}
+.componentsUI.cta-button {
+  background-color: var(--template-color-0);
+  color: white;
+}
+.componentsUI.cta-button:hover {
+  background-color: color-mix(in srgb, var(--template-color-0), transparent 20%);
+  transform: scale(1.05);
+}
+.componentsUI.secondary-button {
+  padding: 8px 16px;
+  border: var(--template-color-0) 2px solid;
+  background-color: transparent;
+}
+.componentsUI.secondary-button:hover {
+  background-color: var(--template-color-0);
+  color: white;
+}
+.componentsUI.icon-button-primary {
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: var(--template-color-0);
+  color: white;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.componentsUI.icon-button-primary i {
+  transition: all 0.3s;
+}
+.componentsUI.icon-button-primary:hover {
+  background-color: color-mix(in srgb, var(--template-color-0), transparent 20%);
+  transform: scale(1.05);
+}
+.componentsUI.icon-button-primary:hover i {
+  animation: shrink-grow 0.6s ease-in-out;
+}
+.componentsUI.icon-button-secondary {
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: var(--template-color-0) 2px solid;
+  box-sizing: border-box;
+  color: white;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.componentsUI.icon-button-secondary i {
+  transition: all 0.3s;
+  color: var(--template-color-0);
+}
+.componentsUI.icon-button-secondary:hover {
+  background-color: color-mix(in srgb, var(--template-color-0), transparent 20%);
+  transform: scale(1.05);
+}
+.componentsUI.icon-button-secondary:hover i {
+  animation: shrink-grow 0.6s ease-in-out;
+  color: #fff;
+}
+.componentsUI.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  box-sizing: border-box;
+  width: 100%;
+}
+@keyframes shrink-grow {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+}

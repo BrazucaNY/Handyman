@@ -1,0 +1,288 @@
+.color-primary {
+  color: var(--template-color-0);
+}
+.color-secondary {
+  color: var(--template-color-1);
+}
+.color-thirdary {
+  color: var(--template-color-3);
+}
+.bg-primary {
+  background-color: var(--template-color-0);
+}
+.bg-secondary {
+  background-color: var(--template-color-1);
+}
+.bg-thirdary {
+  background-color: var(--template-color-3);
+}
+.border-primary {
+  border-color: var(--template-color-0);
+}
+.border-secondary {
+  border-color: var(--template-color-1);
+}
+.border-thirdary {
+  border-color: var(--template-color-3);
+}
+.color-primary-light {
+  color: color-mix(in srgb, var(--template-color-0), white 30%);
+}
+.color-secondary-light {
+  color: color-mix(in srgb, var(--template-color-1), white 30%);
+}
+.color-thirdary-light {
+  color: color-mix(in srgb, var(--template-color-3), white 30%);
+}
+.color-primary-dark {
+  color: color-mix(in srgb, var(--template-color-0), black 30%);
+}
+.color-secondary-dark {
+  color: color-mix(in srgb, var(--template-color-1), black 30%);
+}
+.color-thirdary-dark {
+  color: color-mix(in srgb, var(--template-color-3), black 30%);
+}
+.bg-primary-light {
+  background-color: color-mix(in srgb, var(--template-color-0), white 30%);
+}
+.bg-secondary-light {
+  background-color: color-mix(in srgb, var(--template-color-1), white 30%);
+}
+.bg-thirdary-light {
+  background-color: color-mix(in srgb, var(--template-color-3), white 30%);
+}
+.bg-primary-dark {
+  background-color: color-mix(in srgb, var(--template-color-0), black 30%);
+}
+.bg-secondary-dark {
+  background-color: color-mix(in srgb, var(--template-color-1), black 30%);
+}
+.bg-thirdary-dark {
+  background-color: color-mix(in srgb, var(--template-color-3), black 30%);
+}
+.border-primary-light {
+  border-color: color-mix(in srgb, var(--template-color-0), white 30%);
+}
+.border-secondary-light {
+  border-color: color-mix(in srgb, var(--template-color-1), white 30%);
+}
+.border-thirdary-light {
+  border-color: color-mix(in srgb, var(--template-color-3), white 30%);
+}
+.border-primary-dark {
+  border-color: color-mix(in srgb, var(--template-color-0), black 30%);
+}
+.border-secondary-dark {
+  border-color: color-mix(in srgb, var(--template-color-1), black 30%);
+}
+.border-thirdary-dark {
+  border-color: color-mix(in srgb, var(--template-color-3), black 30%);
+}
+.hover-border-primary {
+  transition: all 0.3s;
+}
+.hover-border-primary:hover {
+  border-color: var(--template-color-0);
+}
+.hover-border-secondary {
+  transition: all 0.3s;
+}
+.hover-border-secondary:hover {
+  border-color: var(--template-color-1);
+}
+.hover-border-thirdary {
+  transition: all 0.3s;
+}
+.hover-border-thirdary:hover {
+  border-color: var(--template-color-3);
+}
+.hover-border-primary-light {
+  transition: all 0.3s;
+}
+.hover-border-primary-light:hover {
+  border-color: color-mix(in srgb, var(--template-color-0), white 30%);
+}
+.hover-border-secondary-light {
+  transition: all 0.3s;
+}
+.hover-border-secondary-light:hover {
+  border-color: color-mix(in srgb, var(--template-color-1), white 30%);
+}
+.hover-border-thirdary-light {
+  transition: all 0.3s;
+}
+.hover-border-thirdary-light:hover {
+  border-color: color-mix(in srgb, var(--template-color-3), white 30%);
+}
+.hover-border-primary-dark {
+  transition: all 0.3s;
+}
+.hover-border-primary-dark:hover {
+  border-color: color-mix(in srgb, var(--template-color-0), black 30%);
+}
+.hover-border-secondary-dark {
+  transition: all 0.3s;
+}
+.hover-border-secondary-dark:hover {
+  border-color: color-mix(in srgb, var(--template-color-1), black 30%);
+}
+.hover-border-thirdary-dark {
+  transition: all 0.3s;
+}
+.hover-border-thirdary-dark:hover {
+  border-color: color-mix(in srgb, var(--template-color-3), black 30%);
+}
+.hover-bg-primary:hover {
+  transition: background-color 0.3s;
+  background-color: var(--template-color-0);
+}
+.hover-bg-secondary:hover {
+  transition: background-color 0.3s;
+  background-color: var(--template-color-1);
+}
+.hover-bg-thirdary:hover {
+  transition: background-color 0.3s;
+  background-color: var(--template-color-3);
+}
+.hover-color-primary:hover {
+  transition: color 0.3s;
+  color: var(--template-color-0);
+}
+.hover-color-secondary:hover {
+  transition: color 0.3s;
+  color: var(--template-color-1);
+}
+.hover-color-thirdary:hover {
+  transition: color 0.3s;
+  color: var(--template-color-3);
+}
+.hover-bg-primary-light:hover {
+  transition: background-color 0.3s;
+  background-color: color-mix(in srgb, var(--template-color-0), white 30%);
+}
+.hover-bg-secondary-light:hover {
+  transition: background-color 0.3s;
+  background-color: color-mix(in srgb, var(--template-color-1), white 30%);
+}
+.hover-bg-thirdary-light:hover {
+  transition: background-color 0.3s;
+  background-color: color-mix(in srgb, var(--template-color-3), white 30%);
+}
+.hover-bg-primary-dark:hover {
+  transition: background-color 0.3s;
+  background-color: color-mix(in srgb, var(--template-color-0), black 30%);
+}
+.hover-bg-secondary-dark:hover {
+  transition: background-color 0.3s;
+  background-color: color-mix(in srgb, var(--template-color-1), black 30%);
+}
+.hover-bg-thirdary-dark:hover {
+  transition: background-color 0.3s;
+  background-color: color-mix(in srgb, var(--template-color-3), black 30%);
+}
+.hover-color-primary-light:hover {
+  transition: color 0.3s;
+  color: color-mix(in srgb, var(--template-color-0), white 30%);
+}
+.hover-color-secondary-light:hover {
+  transition: color 0.3s;
+  color: color-mix(in srgb, var(--template-color-1), white 30%);
+}
+.hover-color-thirdary-light:hover {
+  transition: color 0.3s;
+  color: color-mix(in srgb, var(--template-color-3), white 30%);
+}
+.hover-color-primary-dark:hover {
+  transition: color 0.3s;
+  color: color-mix(in srgb, var(--template-color-0), black 30%);
+}
+.hover-color-secondary-dark:hover {
+  transition: color 0.3s;
+  color: color-mix(in srgb, var(--template-color-1), black 30%);
+}
+.hover-color-thirdary-dark:hover {
+  transition: color 0.3s;
+  color: color-mix(in srgb, var(--template-color-3), black 30%);
+}
+.hover-color-white {
+  transition: all 0.3s ease-in-out;
+}
+.hover-color-white:hover {
+  color: white !important;
+}
+.hover-color-white:hover > * {
+  color: white !important;
+}
+.hover-color-white:hover > * > * {
+  color: white !important;
+}
+.hover-color-white:hover > * > * > * {
+  color: white !important;
+}
+.hover-color-white:hover > * > * > * > * {
+  color: white !important;
+}
+.hover-color-black {
+  transition: all 0.3s;
+}
+.hover-color-black:hover {
+  color: #000 !important;
+}
+.hover-color-black:hover > * {
+  color: #000 !important;
+}
+.hover-color-black:hover > * > * {
+  color: #000 !important;
+}
+.hover-color-black:hover > * > * > * {
+  color: #000 !important;
+}
+.hover-color-black:hover > * > * > * > * {
+  color: #000 !important;
+}
+
+.radius-sm {
+  border-radius: var(--radius-sm);
+}
+.radius-md {
+  border-radius: var(--radius-med);
+}
+.radius-lg {
+  border-radius: var(--radius-lg);
+}
+.radius-xl {
+  border-radius: var(--radius-xl);
+}
+
+.bg-gradient-vertical {
+  background: linear-gradient(to top, color-mix(in srgb, var(--template-color-0), white 85%) 0%, transparent 70%);
+}
+.bg-gradient-horizontal {
+  background: linear-gradient(to right, color-mix(in srgb, var(--template-color-0), white 85%) 0%, transparent 70%);
+}
+
+.bg-gradient-vertical-hover {
+  transition: all 0.3s ease-in-out;
+}
+.bg-gradient-vertical-hover:hover {
+  background: linear-gradient(to top, color-mix(in srgb, var(--template-color-0), white 85%) 0%, transparent 70%);
+}
+
+.bg-gradient-to-primary-light {
+  background: linear-gradient(
+    to right,
+    color-mix(in srgb, var(--template-color-0), white 40%) 0%,
+    var(--template-color-0) 70%,
+    color-mix(in srgb, var(--template-color-0), rgb(41, 41, 41) 10%) 100%
+  );
+}
+
+@media (min-width: 720px) {
+  .md-bg-primary {
+    background-color: var(--template-color-0);
+  }
+  .md-bg-secondary {
+    background-color: var(--template-color-1);
+  }
+}
