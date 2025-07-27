@@ -1,140 +1,94 @@
-<!DOCTYPE html>
-<html lang="en" style="--template-color-0: #cd1d26; --template-color-1: #1dcdc4;">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Rodrigues Handyman: Licensed Home Improvement Services in Illinois & Chicago</title>
-
-    <!-- Local Styles -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-
-    <!-- Tailwind CSS (Optional CDN version, replace if local) -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-
-    <!-- Font Awesome (Optional CDN version) -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-
-    <!-- JavaScript Module -->
-    <script src="js/sendData.js" type="module" defer></script>
-
-    <!-- Metadata -->
-    <meta name="projectId" content="c353f2cc-db50-4c96-9c44-64309de17b57" />
-    <meta name="pageId" content="c353f2cc-db50-4c96-9c44-64309de17b57" />
-    <meta property="og:image" content="img/ph-img-13.webp" />
-    <meta name="langCode" content="en" />
-
-    <!-- Favicon (Optional) -->
-    <link rel="icon" href="img/favicon.png" type="image/png" />
-  </head>
-
-  <body class="bg-gray-100">
-    <header
-      class="fixed bg-white top-0 w-full flex justify-center items-center py-2 z-50"
-      data-segmentid="seg-header-01"
-    >
-      <nav class="w-full flex flex-col md:flex-row justify-between py-2 section-width">
-        <!-- Logo -->
-        <div class="flex items-center justify-center">
-          <img
-            src="img/logo-placeholder.png"
-            alt="logo"
-            class="h-[90px] w-[150px] max-w-none"
-            style="display: none;"
-          />
-        </div>
-
-        <!-- Burger Menu Button -->
-        <div class="flex items-center justify-center md:justify-start gap-2 w-full md:w-0">
-          <button id="burger-button" type="button" class="block md:hidden">
-            <svg
-              width="32"
-              height="32"
-              viewBox="0 0 16 16"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              class="block"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M0 3.75A.75.75 0 0 1 .75 3h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 3.75M0 8a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 8m.75 3.5a.75.75 0 0 0 0 1.5h14.5a.75.75 0 0 0 0-1.5z"
-              />
-            </svg>
-          </button>
-        </div>
-
-        <!-- Navigation Menu -->
-        <menu
-          id="nav-menu"
-          class="hidden md:flex flex-col md:flex-row items-center p-2 justify-between transition-all duration-300 overflow-hidden w-full md:max-h-full menu-collapsed md:overflow-visible ml-0 md:ml-16"
-        >
-          <ul class="flex flex-col md:flex-row gap-6 justify-center text-base items-center py-1 px-4">
-            <li><a class="nav-link uppercase hover:text-secondary" href="/#home">Home</a></li>
-            <li><a class="nav-link uppercase hover:text-secondary" href="/#services-dashboard">Our Services</a></li>
-            <li><a class="nav-link uppercase hover:text-secondary" href="/#animated-gallery">Project Gallery</a></li>
-            <li><a class="nav-link uppercase hover:text-secondary" href="/#testimonials-2">Client Reviews</a></li>
-            <li><a class="nav-link uppercase hover:text-secondary" href="/#pricing-1">Service Rates</a></li>
-            <li><a class="nav-link uppercase hover:text-secondary" href="/#contact-1">Contact Us</a></li>
-          </ul>
-
-          <!-- Optional Language Placeholder -->
-          <span class="shared-language-placeholder"></span>
-
-          <!-- CTA Button -->
-          <a href="/#footer" class="primary-button">Footer</a>
-        </menu>
-      </nav>
-    </header>
-  
-  <section class="relative md:h-screen w-full flex flex-col pb-24 justify-between items-center grid-section-container" id="home">
-   <div class="shared-overlay" data-not-draggable="true" draggable="true">
-    <img alt="person holding blue and silver hand tool" class="null" data-query="craftsmanship" draggable="true" id="ph-img-13" src="img/ph-img-13.webp"/>
-   </div>
-   <div class="gap-4 relative w-full mt-32 md:mt-20 text-white section-width section-grid-size grid-container row-start-1 row-end-2 grid-draggable" draggable="true">
-    <h1 class="text-3xl lg:text-6xl col-start-[1] col-end-[51] row-start-1 row-end-2 grid-draggable resize-highlight" draggable="true" style="outline-offset: 0px; outline: none;">
-     Welcome to Rodrigues Handyman
-    </h1>
-    <h6 class="col-start-[15] col-end-[35] row-start-2 row-end-3 mt-4 text-lg grid-draggable resize-highlight" draggable="true" style="outline-offset: 0px; outline: none;">
-     Rodrigues Handyman offers top-notch home improvement and maintenance services across Illinois and Chicago. With over a decade of experience, we guarantee professionalism and quality in every project.
-    </h6>
-    <a class="primary-button col-start-[20] col-end-[30] text-center row-start-3 row-end-4 mt-4 grid-draggable resize-highlight" draggable="true" style="outline-offset: 0px; outline: none;">
-     Get Started
-    </a>
-    <div class="flex gap-4 mt-8 col-start-[1] col-end-[49] justify-center row-start-4 row-end-5 grid-draggable resize-highlight" draggable="true" style="outline-offset: 0px; outline: none;">
-     <a draggable="true" href="#">
-      <i class="p-2 radius-full block bg-zinc-400 bg-opacity-50 text-white hover-bg-primary-light cursor-pointer" draggable="true">
-       <svg draggable="true" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z" draggable="true" fill="currentColor">
-        </path>
-       </svg>
-      </i>
-     </a>
-     <a draggable="true" href="#">
-      <i class="p-2 radius-full block bg-zinc-400 bg-opacity-50 text-white hover-bg-primary-light cursor-pointer" draggable="true">
-       <svg draggable="true" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" draggable="true" fill="currentColor">
-        </path>
-       </svg>
-      </i>
-     </a>
-     <a draggable="true" href="#">
-      <i class="p-2 radius-full block bg-zinc-400 bg-opacity-50 text-white hover-bg-primary-light cursor-pointer" draggable="true">
-       <svg draggable="true" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z" draggable="true" fill="currentColor">
-        </path>
-       </svg>
-      </i>
-     </a>
+<header class="fixed bg-white top-0 w-full z-50 shadow-md">
+  <nav class="max-w-7xl mx-auto flex flex-wrap items-center justify-between px-4 py-3 md:py-4">
+    
+    <!-- Logo -->
+    <div class="flex items-center">
+      <a href="#home">
+        <img src="img/logo-placeholder.png" alt="Rodrigues Handyman Logo" class="h-[70px] w-auto" />
+      </a>
     </div>
-   </div>
-  </section>
+
+    <!-- Mobile Burger Icon -->
+    <button id="burger-button" class="md:hidden text-gray-700 focus:outline-none" aria-label="Toggle navigation">
+      <svg width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M0 3.75A.75.75 0 0 1 .75 3h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 3.75M0 8a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H.75A.75.75 0 0 1 0 8m.75 3.5a.75.75 0 0 0 0 1.5h14.5a.75.75 0 0 0 0-1.5z" />
+      </svg>
+    </button>
+
+    <!-- Navigation Menu -->
+    <menu id="nav-menu" class="w-full md:flex md:items-center md:w-auto hidden mt-4 md:mt-0">
+      <ul class="flex flex-col md:flex-row gap-4 md:gap-6 items-center text-base font-semibold">
+        <li><a href="/#home" class="hover:text-red-600 uppercase">Home</a></li>
+        <li><a href="/#services-dashboard" class="hover:text-red-600 uppercase">Our Services</a></li>
+        <li><a href="/#animated-gallery" class="hover:text-red-600 uppercase">Project Gallery</a></li>
+        <li><a href="/#testimonials-2" class="hover:text-red-600 uppercase">Client Reviews</a></li>
+        <li><a href="/#pricing-1" class="hover:text-red-600 uppercase">Service Rates</a></li>
+        <li><a href="/#contact-1" class="hover:text-red-600 uppercase">Contact Us</a></li>
+      </ul>
+
+      <!-- Call-to-action Button -->
+      <div class="mt-4 md:mt-0 md:ml-6">
+        <a href="/#footer" class="bg-red-600 text-white px-4 py-2 rounded-md hover:bg-red-700 transition">
+          Footer
+        </a>
+      </div>
+    </menu>
+  </nav>
+
+  <!-- Responsive JS toggle (optional if already handled elsewhere) -->
+  <script>
+    const burger = document.getElementById('burger-button');
+    const menu = document.getElementById('nav-menu');
+    burger.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</header>
+
+ <section id="home" class="relative w-full flex flex-col justify-between items-center pb-24 md:h-screen">
+  <!-- Background Image Overlay -->
+  <div class="absolute inset-0 z-0">
+    <img src="img/ph-img-13.webp" alt="Person holding blue and silver hand tool"
+         class="object-cover w-full h-full opacity-80" />
+  </div>
+
+  <!-- Content Container -->
+  <div class="relative z-10 w-full mt-32 md:mt-20 text-white section-width grid gap-4">
+    <h1 class="text-3xl lg:text-6xl font-bold">
+      Welcome to Rodrigues Handyman
+    </h1>
+    <p class="text-lg max-w-2xl mt-4">
+      Rodrigues Handyman offers top-notch home improvement and maintenance services across Illinois and Chicago. With over a decade of experience, we guarantee professionalism and quality in every project.
+    </p>
+    <a href="#contact-1" class="primary-button text-center mt-4 w-fit">
+      Get Started
+    </a>
+
+    <!-- Social Links -->
+    <div class="flex gap-4 mt-8 justify-center">
+      <a href="#" aria-label="Facebook" class="p-2 rounded-full bg-zinc-400 bg-opacity-50 text-white hover:bg-primary-light">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"/>
+        </svg>
+      </a>
+      <a href="#" aria-label="Instagram" class="p-2 rounded-full bg-zinc-400 bg-opacity-50 text-white hover:bg-primary-light">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/>
+        </svg>
+      </a>
+      <a href="#" aria-label="LinkedIn" class="p-2 rounded-full bg-zinc-400 bg-opacity-50 text-white hover:bg-primary-light">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M6.94 5a2 2 0 1 1-4-.002a2 2 0 0 1 4 .002M7 8.48H3V21h4zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+ 
+ 
+ 
   <div class="flex flex-col md:flex-row divide-y-2 md:divide-y-0 md:divide-x-2 px-4 py-4 bg-white radius-md relative mt-8 md:-bottom-12 md:absolute md:mt-0 z-20 left-1/2 transform -translate-x-1/2">
    <div class="flex gap-4 flex-col px-12 items-center py-4 md:py-0">
     <h4 class="font-semibold text-4xl">
