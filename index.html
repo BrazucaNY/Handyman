@@ -242,42 +242,39 @@
         </div>
         </div>
         </section>
-      
-<section data-section-prompt="Contact form for services" class="w-full bg-secondary text-white grid-section-container radius-section gap-12 flex flex-col justify-center items-center" id="contact-1" style="position: relative;">
+   
+   
+   <section id="contact-1" class="w-full bg-secondary text-white grid-section-container radius-section gap-12 flex flex-col justify-center items-center" style="position: relative;">
   <div class="grid-container section-width section-grid-size row-start-1 row-end-2 grid-draggable">
-    <h2 class="section-width section-grid-size col-start-[1] col-end-[25] row-start-1 row-end-2 flex justify-center grid-draggable" data-cgh="Contact section title">Contact David</h2>
+    <h2 class="section-width section-grid-size col-start-[1] col-end-[25] row-start-1 row-end-2 flex justify-center grid-draggable">Contact David</h2>
+
     <div class="flex flex-col md:flex-row w-full section-width section-grid-size gap-8 p-4 col-start-[1] col-end-[51] grid-container row-start-2 row-end-3 grid-draggable">
-      
-	  
-	  <!-- Email script -->
-	  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-	  <script type="text/javascript">
-      (function(){
-      emailjs.init("1VIBdNf4gVPj1pG2Q"); // Replace with your actual public key
-      })();
+
+      <!-- EmailJS Script -->
+      <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      <script type="text/javascript">
+        (function() {
+          emailjs.init("1VIBdNf4gVPj1pG2Q"); // Replace with your EmailJS Public Key
+        })();
+
+        window.addEventListener("DOMContentLoaded", function () {
+          document.getElementById("default-contact-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            emailjs.sendForm("service_bfe2iwq", "template_yooy3rm", this)
+              .then(function () {
+                alert("Message sent successfully!");
+                document.getElementById("default-contact-form").reset();
+              }, function (error) {
+                console.error("Failed to send message:", error);
+                alert("Something went wrong. Please try again later.");
+              });
+          });
+        });
       </script>
 
-<script>
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevent page reload
-
-  emailjs.sendForm("service_bfe2iwq", "service_bfe2iwq", this)
-    .then(function() {
-      alert("Message sent successfully!");
-      document.getElementById("contact-form").reset();
-    }, function(error) {
-      console.error("Failed to send message:", error);
-      alert("Something went wrong. Please try again later.");
-    });
-});
-</script>
-
-
-
-	  
-	  
+      <!-- Contact Form -->
       <form id="default-contact-form" class="flex flex-col gap-6 w-full text-black justify-start items-start col-start-[1] col-end-[25] row-start-1 row-end-2 grid-draggable">
-        
+
         <!-- Name -->
         <div class="flex flex-col gap-2 w-full">
           <label for="name" class="text-white">Full Name:</label>
@@ -315,13 +312,15 @@ document.getElementById("contact-form").addEventListener("submit", function(even
         </div>
 
         <!-- Submit -->
-        <button type="submit" id="form-submit-button" class="primary-button w-fit" data-cgh="Contact section submit button">Get a Quote</button>
-      
+        <button type="submit" id="form-submit-button" class="primary-button w-fit">Get a Quote</button>
       </form>
 
       <!-- Google Map -->
       <div class="w-full col-start-[26] col-end-[51] row-start-1 row-end-2 iframe-container grid-draggable">
-        <iframe class="w-full h-full GMAP_IFRAME" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38413.32676243238!2d-74.03014369432294!3d40.69908594590468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2spl!4v1713774054141!5m2!1sen!2spl" style="border: 0px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" aria-hidden="false" tabindex="0"></iframe>
+        <iframe class="w-full h-full GMAP_IFRAME"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38413.32676243238!2d-74.03014369432294!3d40.69908594590468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2spl!4v1713774054141!5m2!1sen!2spl"
+          style="border: 0px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" aria-hidden="false" tabindex="0">
+        </iframe>
       </div>
 
     </div>
