@@ -258,19 +258,23 @@
       </script>
 
 <script>
-  document.getElementById("default-contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent page reload
 
-    emailjs.sendForm("service_bfe2iwq", "template_yooy3rm", this)
-      .then(function() {
-        alert("Message sent successfully!");
-        document.getElementById("default-contact-form").reset();
-      }, function(error) {
-        console.error("Failed to send message:", error);
-        alert("Something went wrong. Please try again later.");
-      });
-  });
+  emailjs.sendForm("service_bfe2iwq", "service_bfe2iwq", this)
+    .then(function() {
+      alert("Message sent successfully!");
+      document.getElementById("contact-form").reset();
+    }, function(error) {
+      console.error("Failed to send message:", error);
+      alert("Something went wrong. Please try again later.");
+    });
+});
 </script>
+
+
+
+	  
 	  
       <form id="default-contact-form" class="flex flex-col gap-6 w-full text-black justify-start items-start col-start-[1] col-end-[25] row-start-1 row-end-2 grid-draggable">
         
