@@ -248,6 +248,34 @@
     <h2 class="section-width section-grid-size col-start-[1] col-end-[25] row-start-1 row-end-2 flex justify-center grid-draggable" data-cgh="Contact section title">Contact David</h2>
     <div class="flex flex-col md:flex-row w-full section-width section-grid-size gap-8 p-4 col-start-[1] col-end-[51] grid-container row-start-2 row-end-3 grid-draggable">
       
+	  
+	  <!-- Email script -->
+	  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	  <script type="text/javascript">
+      (function(){
+      emailjs.init("1VIBdNf4gVPj1pG2Q"); // Replace with your actual public key
+      })();
+      </script>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent page reload
+
+  emailjs.sendForm("service_bfe2iwq", "template_yooy3rm", this)
+    .then(function() {
+      alert("Message sent successfully!");
+      document.getElementById("contact-form").reset();
+    }, function(error) {
+      console.error("Failed to send message:", error);
+      alert("Something went wrong. Please try again later.");
+    });
+});
+</script>
+
+
+
+	  
+	  
       <form id="default-contact-form" class="flex flex-col gap-6 w-full text-black justify-start items-start col-start-[1] col-end-[25] row-start-1 row-end-2 grid-draggable">
         
         <!-- Name -->
