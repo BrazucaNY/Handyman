@@ -1,0 +1,27 @@
+{
+  "name": "handyman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss input.css -o static/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.11",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^4.1.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrazucaNY/Handyman.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BrazucaNY/Handyman/issues"
+  },
+  "homepage": "https://github.com/BrazucaNY/Handyman#readme"
+}
